@@ -1,8 +1,11 @@
 const fs = require("fs");
 
+// Routing
 module.exports = function(app){
+    // Connect routes to notes data
     let notes = require("../db/db.json");
 
+    // GET request
     app.get("/api/notes", (req, res)=>{
         
         return res.json(notes)
