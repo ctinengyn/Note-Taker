@@ -53,13 +53,21 @@ module.exports = function(app){
 
     // API DELETE request
     app.delete("/api/notes/:id", (req, res) => {
+
+        // Fetch id to delete
         const id = req.params.id;
         let found;
         notes.forEach((n, index) => {
+
+            // Responds with deleted note
             if(id == n.id){
+
+                // Removes the deleted note
                 notes.splice(index,1)
                 const notesCopy = notes.slice();
                 let jsonNotes = JSON.stringify(notesCopy)
+
+                // Write new data to 'db.json' file
                 fs.writeFile("./db/db.json", jsonNotes, function(err) {
                     if (err) {
                         return console.log(err);
@@ -68,6 +76,8 @@ module.exports = function(app){
                 })
             }
         })
+        
+        // Send response
         res.json(true)
     })
 }
