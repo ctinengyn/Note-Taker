@@ -1,3 +1,4 @@
+// Dependencies
 const fs = require("fs");
 
 // Routing
@@ -5,7 +6,7 @@ module.exports = function(app){
     // Connect routes to notes data
     let notes = require("../db/db.json");
 
-    // GET request
+    // API GET request
     app.get("/api/notes", (req, res)=>{
         
         return res.json(notes)
@@ -21,6 +22,8 @@ module.exports = function(app){
                 return res.json(n)
             }
         })
+
+        // Send read data to response of 'GET' request
         return res.json(false)
     })
 
