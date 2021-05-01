@@ -34,8 +34,14 @@ module.exports = function(app){
         notes.push(newNote);
         let jsonNotes = JSON.stringify(notes)
         fs.writeFile("./db/db.json", jsonNotes, function(err) {
-            
+            if (err) {
+                return console.log(err);
+            }
+            console.log("Success!");
         })
+        res.json(true)
     })
+
+    
 
 }
