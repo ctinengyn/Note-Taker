@@ -4,7 +4,7 @@ const fs = require("fs");
 // Routing
 module.exports = function(app){
     // Connect routes to notes data
-    let notes = require("../db/db.json");
+    const notes = require("../db/db.json");
 
     // API GET request
     app.get("/api/notes", (req, res)=>{
@@ -59,7 +59,6 @@ module.exports = function(app){
 
         // Fetch id to delete
         const id = req.params.id;
-        let found;
         notes.forEach((n, index) => {
 
             // Responds with deleted note
