@@ -22,6 +22,10 @@ Run `npm install` to install all dependencies. To use the application locally, r
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://note-taker-supreme.herokuapp.com/)
 
 ## Example
+The Note-Taker file is created in the dist directory and can be found here:
+
+https://drive.google.com/file/d/15TvyeWOaGdKig2UBmP_IuJ12aSgxjS9z/view 🎥
+
 A screenshot showing an example user input is shown below:
 ![Note Taker](./images/example1.png)
 
