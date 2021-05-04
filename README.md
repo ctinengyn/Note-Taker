@@ -21,3 +21,16 @@ Navigate to the developer-profile-generator folder using the command prompt.
 
 Run `npm install` to install all dependencies. To use the application locally, run `node server.js` in your CLI, and then open `http://localhost:1996` in your preferred browswer. The Note Taker app is [live on Heroku](https://warm-falls-19627.herokuapp.com/notes) for you to use as well.
 
+## Built With
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [NodeJS](https://nodejs.org/)
+* Node Packages:
+    * [Express](https://www.npmjs.com/package/express)
+
+## Contact
+
+**Email:**
+ctine.ngyn@gmail.com
+
+**GitHub:**
+[Christine's GitHub](https://github.com/ctinengyn)
